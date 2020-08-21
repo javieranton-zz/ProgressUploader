@@ -105,7 +105,7 @@ public class ProgressUploaderNativeInterfaceImpl {
             fOut.close();
         } catch (Exception ex) {
             //FileNotFound 
-            com.groups.CN1AndroidApplication.traceError("getFileFromString. err: "+ex.toString()+". Source = "+Log.getStackTraceString(ex));
+            com.javieranton.ProgressUploader.progressError();
         }
         return file;
     }

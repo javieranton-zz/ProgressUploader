@@ -38,7 +38,7 @@ public class ProgressUploader {
             progressErrorCallback.completed(ne);
         });
     }
-    public void PostMultipart(String url,String fileContent)
+    public static void PostMultipart(String url,String fileContent)
     {
     	ProgressUploaderNativeInterface cn = NativeLookup.create(ProgressUploaderNativeInterface.class);
         if(cn!=null && cn.isSupported())
