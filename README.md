@@ -13,7 +13,6 @@ This lib uses OKHTTP and CoreProgress Gradle dependecies as well as AFNetworking
       Display.getInstance().callSerially(()->{
       //track your progress here with CustomNetworkEvent.progress
       });
-      
     };
     OnComplete<CustomNetworkEvent> doneListener = CustomNetworkEvent -> {   
       Display.getInstance().callSerially(()->{
