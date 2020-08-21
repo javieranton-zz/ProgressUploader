@@ -1,9 +1,9 @@
 # ProgressUploader
-Multipart Upload text file request and track upload progress
+Multipart Upload of text file. Tracks upload progress
 
-This lib will work as is but it's more of an example of how this can be achieved so that you can implement your own code. For example you might want to upload non-text (binary) files instead of text files. Or you might wat to upload files + parameters (there is a commented example in the code)
+This lib will work as is but it's more of an example of how this can be achieved so that you can implement your own code. For example you might want to upload non-text (binary) files instead of text files. Or you might want to upload files + parameters (there is a commented example in the code)
 
-The lib posts your form data with a file tag 'payload' and a file name 'temp.txt'
+The lib posts your form data with a form tag 'payload' and a file name 'temp.txt'
 
 This lib is meant for iOS and Android
 
