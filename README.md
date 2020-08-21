@@ -10,19 +10,13 @@ This lib is meant for iOS and Android
 This lib uses OKHTTP and CoreProgress Gradle dependecies as well as AFNetworking 3.0 Pod
 # Usage
     OnComplete<CustomNetworkEvent> progressListener = CustomNetworkEvent -> {   
-      Display.getInstance().callSerially(()->{
-      //track your progress here with CustomNetworkEvent.progress
-      });
+      //track your progress here with CustomNetworkEvent.progres
     };
     OnComplete<CustomNetworkEvent> doneListener = CustomNetworkEvent -> {   
-      Display.getInstance().callSerially(()->{
         //upload finished. response in CustomNetworkEvent.response
-      });
     };
     OnComplete<CustomNetworkEvent> errorListener = CustomNetworkEvent -> {  
-      Display.getInstance().callSerially(()->{
         //upload error. You might want to re-try
-      });
     };
     com.javieranton.ProgressUploader.progressDoneCallback = doneListener;
     com.javieranton.ProgressUploader.progressCallback = progressListener;
