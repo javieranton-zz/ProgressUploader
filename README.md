@@ -32,7 +32,7 @@ You have to serve a multipart HTTP endpoint (MIME type "multipart/form-data"). T
             fileSize: 100 * 1000 * 1000, // no larger than 100mb, you can change as needed.
         }
     });
-    app.post('/YourEndpoint', multerNoMemory.single('payload'), (req, res) => {
+    app.post('/YourEndpoint', multer.single('payload'), (req, res) => {
         console.log(req.file.originalname);
         res.send({result:"ok"});
     });
